@@ -6,20 +6,7 @@ import {
 } from 'pixi.js'
 import * as config from './config'
 
-
-// function randomColor() {
-//    return parseInt(Math.random()*0xffffff))
-// }
-
-/**
- * loading ui
- */
 export default class Loading extends Container {
-
-  /**
-   * @param {object} options   
-   * @param {boolean} options.progress is to show the progress text
-   */
   constructor(options) {
     super()
 
@@ -27,7 +14,6 @@ export default class Loading extends Container {
       progress: true
     }, options)
 
-    //angle of the arc
     let arcAngle = Math.PI * 0.2
 
     //gap angle

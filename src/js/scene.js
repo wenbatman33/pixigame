@@ -1,6 +1,5 @@
-import {TextStyle,Container,Sprite,Text} from 'pixi.js'
-
-import Jigsaw from './jigsaw'
+import { TextStyle, Container, Sprite, Text } from 'pixi.js'
+import Game from './game'
 import Result from './result'
 
 const STYLE_WHITE = new TextStyle({
@@ -10,17 +9,13 @@ const STYLE_WHITE = new TextStyle({
   fill: '#ffffff',
 })
 
-//time limit
-const TOTAL_TIME = 30 //second
+// 倒計時
+const TOTAL_TIME = 10 //second
 
 //time countdown
 let _countdown = TOTAL_TIME
 
-/**
- * scene of the game
- */
 export default class Scene extends Container {
-
   constructor() {
     super()
 
@@ -43,28 +38,22 @@ export default class Scene extends Container {
     this.$time.y = -156
     this.addChild(this.$time)
 
-    //jigsaw puzzle module
-    this.$jigsaw = new Jigsaw(3, app.res.main.textures.puzzle)
-    this.addChild(this.$jigsaw)
+    this.$Game = new Game(3, app.res.main.textures.puzzle)
+    this.addChild(this.$Game)
   }
 
-  /**
-   * start the game
-   */
   start() {
-
     let result = new Result()
     this.addChild(result)
-
     app.sound.play('sound_bg', true)
     let timer = setInterval(() => {
-      if (this.$jigsaw.success) {
+      if (this.$Game.success) {
         clearInterval(timer)
         app.sound.stop('sound_bg')
         app.sound.play('sound_win')
         result.win()
       } else {
-        _countdown--
+        _countdown -= 1
         this.$time.text = _countdown + '″'
         if (_countdown == 0) {
           clearInterval(timer)

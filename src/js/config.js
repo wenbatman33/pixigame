@@ -3,14 +3,12 @@ export const height = 1280
 export const name = 'game'
 export const version = '1.0.0'
 export const i18n = {
+  'zh-cn': 'assets/i18n/zh-cn.json',
   'en': 'assets/i18n/en.json',
-  'zh-cn': 'assets/i18n/zh-cn.json'
 }
 export const viewRect = null
 
-//resource list
-export const resources = [
-  {
+export const resources = [{
     name: 'main',
     url: 'assets/image/main.json'
   }, {
@@ -25,9 +23,10 @@ export const resources = [
   },
   {
     name: 'bg',
-    i18n: {
-      'en': 'assets/image/bg_en.png',
-      'zh-cn': 'assets/image/bg_zh-cn.png',
-    }
+    url: 'assets/image/bg_en.png'
+    // i18n: {
+    //   'en': 'assets/image/bg_en.png',
+    //   // 'zh-cn': 'assets/image/bg_zh-cn.png',
+    // }
   }
 ]

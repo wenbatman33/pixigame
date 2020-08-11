@@ -5,15 +5,9 @@ import {
 } from 'pixi.js'
 import Piece from './piece'
 
-
-//gap between the piece
 const GAP_SIZE = 2
 
-/**
- * cut the picture into level * level pieces.
- * caculate the position of the piece, manage interacton of a piece, check the game is ended.
- */
-export default class Jigsaw extends Container {
+export default class Game extends Container {
   constructor(level, texture) {
     super()
 
@@ -87,8 +81,8 @@ export default class Jigsaw extends Container {
       let frame_col = shuffled_index[ii] % this.level
       let frame = new Rectangle(frame_col * this.piece_width, frame_row * this.piece_height, this.piece_width, this.piece_height)
       let piece = new Piece(new Texture(this.texture, frame), ii, shuffled_index[ii])
-      
-      
+
+
       //add the piece to ui
       let row = parseInt(ii / this.level)
       let col = ii % this.level
