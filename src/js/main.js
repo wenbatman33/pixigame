@@ -13,7 +13,7 @@ async function boot() {
   window.app = new Application({
     width: config.width,
     height: config.height,
-    view: document.querySelector('#scene'),
+    view: document.querySelector('APP'),
     transparent: true
   })
   for (const key in layers) {
