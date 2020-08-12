@@ -1,0 +1,47 @@
+{"frames": {
+
+"faceHit_01.png":
+{
+	"frame": {"x":1,"y":46,"w":48,"h":78},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":78},
+	"sourceSize": {"w":48,"h":78}
+},
+"faceHit_02.png":
+{
+	"frame": {"x":1,"y":96,"w":53,"h":77},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":77},
+	"sourceSize": {"w":53,"h":77}
+},
+"faceHit_03.png":
+{
+	"frame": {"x":1,"y":151,"w":60,"h":83},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":83},
+	"sourceSize": {"w":60,"h":83}
+},
+"faceHit_04.png":
+{
+	"frame": {"x":1,"y":1,"w":43,"h":81},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":81},
+	"sourceSize": {"w":43,"h":81}
+}},
+"animations": {
+	"faceHit": ["faceHit_01.png","faceHit_02.png","faceHit_03.png","faceHit_04.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "faceHit.png",
+	"format": "RGBA8888",
+	"size": {"w":85,"h":212},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:02c00091c86895a4f024308db9c44a61:031d66c09fac78c8a6c2a23ed03f709e:b25ea7e65ebd27c247b1bb9c250f32c7$"
+}
+}

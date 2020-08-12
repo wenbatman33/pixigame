@@ -1,0 +1,39 @@
+{"frames": {
+
+"crouchKick_L_01.png":
+{
+	"frame": {"x":74,"y":1,"w":49,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":56},
+	"sourceSize": {"w":49,"h":56}
+},
+"crouchKick_L_02.png":
+{
+	"frame": {"x":1,"y":1,"w":71,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":56},
+	"sourceSize": {"w":71,"h":56}
+},
+"crouchKick_L_03.png":
+{
+	"frame": {"x":74,"y":1,"w":49,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":56},
+	"sourceSize": {"w":49,"h":56}
+}},
+"animations": {
+	"crouchKick_L": ["crouchKick_L_01.png","crouchKick_L_02.png","crouchKick_L_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "crouchKick_L.png",
+	"format": "RGBA8888",
+	"size": {"w":124,"h":58},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4610df860b880da350c9ea5f39c5cdf9:fb63f08b49c8e8b948c51420f99f515e:ccb45196ff524c720489ca1c6305ec95$"
+}
+}

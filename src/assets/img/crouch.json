@@ -1,0 +1,31 @@
+{"frames": {
+
+"crouch_01.png":
+{
+	"frame": {"x":46,"y":1,"w":43,"h":75},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":75},
+	"sourceSize": {"w":43,"h":75}
+},
+"crouch_02.png":
+{
+	"frame": {"x":1,"y":1,"w":43,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":56},
+	"sourceSize": {"w":43,"h":56}
+}},
+"animations": {
+	"crouch": ["crouch_01.png","crouch_02.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "crouch.png",
+	"format": "RGBA8888",
+	"size": {"w":122,"h":58},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8d05deec965cd916cadc631492c8ebf3:c7a64d6a9747432cb906e2bbabba38cd:750a38211f152f0c17ee84562e88b6a7$"
+}
+}

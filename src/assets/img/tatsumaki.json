@@ -1,0 +1,87 @@
+{"frames": {
+
+"tatsumaki_01.png":
+{
+	"frame": {"x":310,"y":1,"w":40,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":91},
+	"sourceSize": {"w":40,"h":91}
+},
+"tatsumaki_02.png":
+{
+	"frame": {"x":68,"y":1,"w":41,"h":120},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":120},
+	"sourceSize": {"w":41,"h":120}
+},
+"tatsumaki_03.png":
+{
+	"frame": {"x":1,"y":1,"w":65,"h":120},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":120},
+	"sourceSize": {"w":65,"h":120}
+},
+"tatsumaki_04.png":
+{
+	"frame": {"x":111,"y":1,"w":41,"h":119},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":119},
+	"sourceSize": {"w":41,"h":119}
+},
+"tatsumaki_05.png":
+{
+	"frame": {"x":154,"y":1,"w":67,"h":118},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":118},
+	"sourceSize": {"w":67,"h":118}
+},
+"tatsumaki_06.png":
+{
+	"frame": {"x":223,"y":1,"w":41,"h":117},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":117},
+	"sourceSize": {"w":41,"h":117}
+},
+"tatsumaki_07.png":
+{
+	"frame": {"x":266,"y":1,"w":42,"h":113},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":113},
+	"sourceSize": {"w":42,"h":113}
+},
+"tatsumaki_09.png":
+{
+	"frame": {"x":310,"y":94,"w":29,"h":78},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":78},
+	"sourceSize": {"w":29,"h":78}
+},
+"tatsumaki_10.png":
+{
+	"frame": {"x":352,"y":1,"w":43,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":75},
+	"sourceSize": {"w":43,"h":75}
+}},
+"animations": {
+	"tatsumaki": ["tatsumaki_01.png","tatsumaki_02.png","tatsumaki_03.png","tatsumaki_04.png","tatsumaki_05.png","tatsumaki_06.png","tatsumaki_07.png","tatsumaki_09.png","tatsumaki_10.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tatsumaki.png",
+	"format": "RGBA8888",
+	"size": {"w":396,"h":124},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:756e5136245bdd6a4ea15fdf840bd60a:ed362be9d85c53fcbb410ceff700dc43:02d57d66ae8838372289907ca44dec75$"
+}
+}

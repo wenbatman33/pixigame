@@ -1,0 +1,39 @@
+{"frames": {
+
+"victoryType2_01.png":
+{
+	"frame": {"x":1,"y":177,"w":43,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":75},
+	"sourceSize": {"w":43,"h":75}
+},
+"victoryType2_02.png":
+{
+	"frame": {"x":1,"y":1,"w":43,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":87},
+	"sourceSize": {"w":43,"h":87}
+},
+"victoryType2_03.png":
+{
+	"frame": {"x":1,"y":90,"w":43,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":85},
+	"sourceSize": {"w":43,"h":85}
+}},
+"animations": {
+	"victoryType2": ["victoryType2_01.png","victoryType2_02.png","victoryType2_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "victoryType2.png",
+	"format": "RGBA8888",
+	"size": {"w":45,"h":253},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0853e6c4ffca959a37b332c3fba5c909:ab04a5b7da617cabf5a6e552170ecf53:b3b8a11ab32a103cbb6cbae2c71f8df5$"
+}
+}

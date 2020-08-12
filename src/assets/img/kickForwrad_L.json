@@ -1,0 +1,39 @@
+{"frames": {
+
+"kickForwrad_L_01.png":
+{
+	"frame": {"x":1,"y":1,"w":47,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":84},
+	"sourceSize": {"w":47,"h":84}
+},
+"kickForwrad_L_02.png":
+{
+	"frame": {"x":50,"y":1,"w":71,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":82},
+	"sourceSize": {"w":71,"h":82}
+},
+"kickForwrad_L_03.png":
+{
+	"frame": {"x":1,"y":1,"w":47,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":84},
+	"sourceSize": {"w":47,"h":84}
+}},
+"animations": {
+	"kickForwrad_L": ["kickForwrad_L_01.png","kickForwrad_L_02.png","kickForwrad_L_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "kickForwrad_L.png",
+	"format": "RGBA8888",
+	"size": {"w":122,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a5b1e53fcd35bf5d4bd7f6037517dea5:b11f553ca8e79c9af8caeddc474595d8:824f657bc0985c9ae0168cea837cdd45$"
+}
+}

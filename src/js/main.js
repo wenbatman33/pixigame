@@ -1,5 +1,5 @@
 import { Container } from 'pixi.js'
-import * as config from './config'
+import * as config from './_config'
 import Application from './app'
 import Loading from './loading'
 import Scene from './scene'
@@ -10,7 +10,6 @@ const layers = {
 }
 
 async function boot() {
-  document.title = config.name
   window.app = new Application({
     width: config.width,
     height: config.height,
@@ -35,7 +34,6 @@ function loadRes() {
       resolve()
       loading.destroy()
     })
-
     app.load()
   })
   return promise
@@ -44,7 +42,7 @@ function loadRes() {
 function setup() {
   let scene = new Scene()
   layers.scene.addChild(scene)
-  scene.start()
+  // scene.start()
 }
 
 window.onload = async () => {

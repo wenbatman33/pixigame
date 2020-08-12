@@ -1,48 +1,28 @@
 import * as PIXI from 'pixi.js'
+import * as config from './_config'
 import Sound from './sound'
 import I18N from './i18n'
-import * as config from './config'
 
 export default class Application extends PIXI.Application {
   constructor(options) {
-    options.resizeTo = undefined
     super(options)
     PIXI.utils.EventEmitter.call(this)
-    this.viewRect = config.viewRect
-    window.addEventListener('resize', () => this.autoResize(this.viewRect))
-    window.addEventListener('orientationchange', () => this.autoResize(this.viewRect))
-
-    this.autoResize(this.viewRect)
+    window.addEventListener('resize', () => this.autoResize())
+    window.addEventListener('orientationchange', () => this.autoResize())
+    this.autoResize()
     this.sound = new Sound()
-    this.i18n = new I18N(config.i18n)
+    this.i18n = new I18N()
   }
   autoResize() {
-    let viewRect = Object.assign({
-      x: 0,
-      y: 0,
-      width: window.innerWidth,
-      height: window.innerHeight
-    }, this.viewRect)
-
+    const viewRect = { x: 0, y: 0, width: window.innerWidth, height: window.innerHeight }
     const defaultRatio = this.view.width / this.view.height
     const windowRatio = viewRect.width / viewRect.height
-
-    let width
-    let height
-
-    if (windowRatio < defaultRatio) {
-      width = viewRect.width
-      height = viewRect.width / defaultRatio
-    } else {
-      height = viewRect.height
-      width = viewRect.height * defaultRatio
-    }
-
-    let x = viewRect.x + (viewRect.width - width) / 2
-    let y = viewRect.y + (viewRect.height - height) / 2
-
-    let autofitItems = document.querySelectorAll('.autofit')
-    autofitItems.forEach(item => {
+    const width = (windowRatio < defaultRatio) ? viewRect.width : (viewRect.height * defaultRatio)
+    const height = (windowRatio < defaultRatio) ? (viewRect.width / defaultRatio) : viewRect.height
+    const x = viewRect.x + (viewRect.width - width) / 2
+    const y = viewRect.y + (viewRect.height - height) / 2
+    const APP = document.querySelectorAll('.APP')
+    APP.forEach(item => {
       item.style.left = `${x}px`
       item.style.top = `${y}px`
       item.style.width = `${width}px`
@@ -51,43 +31,21 @@ export default class Application extends PIXI.Application {
   }
   load() {
     let loader = new PIXI.Loader()
-    loader.defaultQueryString = `v=${config.version}`
-    console.log(`v=${config.version}`)
-    loader.add(this.i18n.file)
-    config.resources.forEach(res => {
-      if (res.i18n) {
-        loader.add({
-          name: res.name,
-          url: res.i18n[this.i18n.language]
-        })
-      } else {
-        loader.add(res)
-      }
-    })
-
+    loader.add(this.i18n.defaultJson)
+    config.resources.forEach(res => loader.add(res))
     loader
-      .on('start', () => {
-        this.emit('loader:start')
-      })
-      .on('progress', (loader, res) => {
-        this.emit('loader:progress', parseInt(loader.progress))
-      })
+      .on('start', () => { this.emit('loader:start') })
+      .on('progress', (loader, res) => { this.emit('loader:progress', parseInt(loader.progress)) })
       .on('load', (loader, res) => {
         console.log(`loader:load ${res.url}`)
         this.emit('load:res', res.url)
       })
-      .on('error', (err, loader, res) => {
-        // console.warn(err)
-        this.emit('loader:error', res.url)
-      })
+      .on('error', (err, loader, res) => { this.emit('loader:error', res.url) })
       .load((loader, res) => {
-        // console.log('loader:complete')
         app.res = res
-        this.i18n.add(res[this.i18n.file].data)
-        delete res[this.i18n.file]
+        this.i18n.add(res[this.i18n.defaultJson].data)
         this.emit('loader:complete', res)
       })
-
     return loader
   }
 }

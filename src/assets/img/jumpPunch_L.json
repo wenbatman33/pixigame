@@ -1,0 +1,39 @@
+{"frames": {
+
+"jumpPunch_L_01.png":
+{
+	"frame": {"x":1,"y":1,"w":40,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":67},
+	"sourceSize": {"w":40,"h":67}
+},
+"jumpPunch_L_02.png":
+{
+	"frame": {"x":43,"y":1,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":51},
+	"sourceSize": {"w":51,"h":51}
+},
+"jumpPunch_L_03.png":
+{
+	"frame": {"x":96,"y":1,"w":31,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":67},
+	"sourceSize": {"w":31,"h":67}
+}},
+"animations": {
+	"jumpPunch_L": ["jumpPunch_L_01.png","jumpPunch_L_02.png","jumpPunch_L_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jumpPunch_L.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":69},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4e47234d561546c694eff5f185179431:c68c7b117b9037a9c0407d15ec01b497:9cb659b67d7d39b94fb2447e4fa7d349$"
+}
+}

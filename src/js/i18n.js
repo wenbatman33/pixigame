@@ -1,33 +1,22 @@
-import { parseQueryString } from './util'
 import mustache from 'mustache'
 
-
+const jsonList = {
+  'zh-cn': 'assets/i18n/zh-cn.json',
+  'en': 'assets/i18n/en.json',
+}
 export default class I18N {
-  constructor(config) {
-    this.config = config
+  constructor() {
+    this.defaultLanguage = 'en'
     this.words = {}
   }
-
   add(words) {
     Object.assign(this.words, words)
   }
-
-  get language() {
-    let lang = parseQueryString().lang
-    let languages = Object.keys(this.config)
-    if (lang && languages.indexOf(lang) !== -1) {
-      return lang
-    }
-    lang = window.navigator.userLanguage || window.navigator.language
-    if (lang && languages.indexOf(lang) !== -1) {
-      return lang
-    }
-    return 'zh-cn'
+  set setDefaultLanguage(lang) {
+    this.defaultLanguage = lang
   }
-
-  get file() {
-    let uri = this.config[this.language]
-    return uri
+  get defaultJson() {
+    return jsonList[this.defaultLanguage]
   }
   get(key, options) {
     let text = this.words[key]

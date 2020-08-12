@@ -1,0 +1,39 @@
+{"frames": {
+
+"punch_L_01.png":
+{
+	"frame": {"x":1,"y":1,"w":43,"h":81},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":81},
+	"sourceSize": {"w":43,"h":81}
+},
+"punch_L_02.png":
+{
+	"frame": {"x":1,"y":46,"w":57,"h":81},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":81},
+	"sourceSize": {"w":57,"h":81}
+},
+"punch_L_03.png":
+{
+	"frame": {"x":1,"y":1,"w":43,"h":81},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":81},
+	"sourceSize": {"w":43,"h":81}
+}},
+"animations": {
+	"punch_L": ["punch_L_01.png","punch_L_02.png","punch_L_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "punch_L.png",
+	"format": "RGBA8888",
+	"size": {"w":83,"h":104},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e1ba46f4b0aee7a35c5abbadf2405416:514548ed66dd1ea7481d23805c9c92c6:cacbc6d875d39ae8c72f8505860898fd$"
+}
+}

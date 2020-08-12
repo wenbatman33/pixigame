@@ -1,0 +1,39 @@
+{"frames": {
+
+"kick_L_01.png":
+{
+	"frame": {"x":70,"y":1,"w":49,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":85},
+	"sourceSize": {"w":49,"h":85}
+},
+"kick_L_02.png":
+{
+	"frame": {"x":1,"y":1,"w":67,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":85},
+	"sourceSize": {"w":67,"h":85}
+},
+"kick_L_03.png":
+{
+	"frame": {"x":70,"y":1,"w":49,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":85},
+	"sourceSize": {"w":49,"h":85}
+}},
+"animations": {
+	"kick_L": ["kick_L_01.png","kick_L_02.png","kick_L_03.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "kick_L.png",
+	"format": "RGBA8888",
+	"size": {"w":120,"h":87},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:531e09d3bc97b5f2d5abee9026bbf6be:89e5242d3323ce60fa3d20bba34ac499:25187890c51e9d3b0526fcbfc819740a$"
+}
+}

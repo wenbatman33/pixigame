@@ -1,0 +1,47 @@
+{"frames": {
+
+"crouchPunch_M_01.png":
+{
+	"frame": {"x":64,"y":1,"w":45,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":55},
+	"sourceSize": {"w":45,"h":55}
+},
+"crouchPunch_M_02.png":
+{
+	"frame": {"x":1,"y":1,"w":61,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":56},
+	"sourceSize": {"w":61,"h":56}
+},
+"crouchPunch_M_03.png":
+{
+	"frame": {"x":64,"y":1,"w":45,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":55},
+	"sourceSize": {"w":45,"h":55}
+},
+"crouchPunch_M_04.png":
+{
+	"frame": {"x":111,"y":1,"w":45,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":55},
+	"sourceSize": {"w":45,"h":55}
+}},
+"animations": {
+	"crouchPunch_M": ["crouchPunch_M_01.png","crouchPunch_M_02.png","crouchPunch_M_03.png","crouchPunch_M_04.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "crouchPunch_M.png",
+	"format": "RGBA8888",
+	"size": {"w":157,"h":58},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fa77518bd03dcce9b404c5f2568026e1:f011c50586ec662fc4cfb4dae812217d:5ae26fecaf6e21c0a7d44dd87796c7a2$"
+}
+}

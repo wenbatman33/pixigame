@@ -1,0 +1,47 @@
+{"frames": {
+
+"hadoukan_01.png":
+{
+	"frame": {"x":73,"y":69,"w":51,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":82},
+	"sourceSize": {"w":51,"h":82}
+},
+"hadoukan_02.png":
+{
+	"frame": {"x":1,"y":1,"w":66,"h":76},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":76},
+	"sourceSize": {"w":66,"h":76}
+},
+"hadoukan_03.png":
+{
+	"frame": {"x":1,"y":141,"w":66,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+	"sourceSize": {"w":66,"h":73}
+},
+"hadoukan_04.png":
+{
+	"frame": {"x":1,"y":69,"w":70,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":70},
+	"sourceSize": {"w":70,"h":70}
+}},
+"animations": {
+	"hadoukan": ["hadoukan_01.png","hadoukan_02.png","hadoukan_03.png","hadoukan_04.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hadoukan.png",
+	"format": "RGBA8888",
+	"size": {"w":125,"h":215},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c8038c2ee01403a8f84c28757ab67460:316883db577a6f2b8ed38eedd950f81b:46e349bf4a7c058d70e48dbadee81a9f$"
+}
+}

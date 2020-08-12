@@ -1,0 +1,31 @@
+{"frames": {
+
+"ForwradJumpPunch_L_01.png":
+{
+	"frame": {"x":1,"y":1,"w":31,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":67},
+	"sourceSize": {"w":31,"h":67}
+},
+"ForwradJumpPunch_L_02.png":
+{
+	"frame": {"x":1,"y":70,"w":39,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":39,"h":53},
+	"sourceSize": {"w":39,"h":53}
+}},
+"animations": {
+	"ForwradJumpPunch_L": ["ForwradJumpPunch_L_01.png","ForwradJumpPunch_L_02.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ForwradJumpPunch_L.png",
+	"format": "RGBA8888",
+	"size": {"w":41,"h":124},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:553c7fe29c205450f60c743f227967f0:0f90661293d21416bec07391ac8b6036:cc4a821773bf26f7369c55e2983bb548$"
+}
+}

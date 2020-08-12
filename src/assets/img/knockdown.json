@@ -1,0 +1,79 @@
+{"frames": {
+
+"knockdown_01.png":
+{
+	"frame": {"x":199,"y":74,"w":47,"h":60},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":60},
+	"sourceSize": {"w":47,"h":60}
+},
+"knockdown_02.png":
+{
+	"frame": {"x":210,"y":1,"w":43,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+	"sourceSize": {"w":43,"h":71}
+},
+"knockdown_03.png":
+{
+	"frame": {"x":98,"y":1,"w":72,"h":53},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":53},
+	"sourceSize": {"w":72,"h":53}
+},
+"knockdown_04.png":
+{
+	"frame": {"x":55,"y":97,"w":75,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":30},
+	"sourceSize": {"w":75,"h":30}
+},
+"knockdown_05.png":
+{
+	"frame": {"x":132,"y":75,"w":52,"h":65},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":52,"h":65},
+	"sourceSize": {"w":52,"h":65}
+},
+"knockdown_06.png":
+{
+	"frame": {"x":1,"y":1,"w":52,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":52,"h":102},
+	"sourceSize": {"w":52,"h":102}
+},
+"knockdown_07.png":
+{
+	"frame": {"x":153,"y":1,"w":55,"h":71},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":71},
+	"sourceSize": {"w":55,"h":71}
+},
+"knockdown_08.png":
+{
+	"frame": {"x":55,"y":1,"w":41,"h":94},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":94},
+	"sourceSize": {"w":41,"h":94}
+}},
+"animations": {
+	"knockdown": ["knockdown_01.png","knockdown_02.png","knockdown_03.png","knockdown_04.png","knockdown_05.png","knockdown_06.png","knockdown_07.png","knockdown_08.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "knockdown.png",
+	"format": "RGBA8888",
+	"size": {"w":260,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a4ee2d8486df40fe050ad193487306b4:96a3e4aaf8979a511eeec4e801fc5183:0400c5f05656b225398dd64fd8753b84$"
+}
+}

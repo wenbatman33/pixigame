@@ -1,30 +1,17 @@
-import {
-  TextStyle,
-  Container,
-  Text,
-  Graphics
-} from 'pixi.js'
-import * as config from './config'
+import { TextStyle, Container, Text, Graphics } from 'pixi.js'
+import * as config from './_config'
 
 export default class Loading extends Container {
   constructor(options) {
     super()
-
-    this.options = Object.assign({
-      progress: true
-    }, options)
-
+    this.options = Object.assign({ progress: true }, options)
     let arcAngle = Math.PI * 0.2
-
     //gap angle
     let gapAngle = Math.PI * 0.05
-
     //offset angle, graphics start  from 3 o'clock
     let offsetAngle = -arcAngle * 0.5
-
     //radius of the angle
     let radius = 80
-
     //background mask
     let bg = new Graphics()
     bg.moveTo(0, 0)
@@ -32,7 +19,6 @@ export default class Loading extends Container {
     bg.drawRect(-config.width / 2, -config.height / 2, config.width, config.height)
     bg.interactive = true
     this.addChild(bg)
-
     //create 8 arcs
     for (let i = 0; i < 8; i++) {
       let arc = new Graphics()
@@ -42,18 +28,15 @@ export default class Loading extends Container {
       arc.arc(0, 0, radius, startAngle, endAngle)
       this.addChild(arc)
     }
-
     //create ratating arc
     let mask = new Graphics()
     this.addChild(mask)
-
     if (this.options.progress) {
       this.indicatorText = new Text('0%', new TextStyle({
         fontFamily: 'Arial',
         fontSize: 20,
         fill: '#ffffff',
       }))
-
       this.indicatorText.anchor.set(0.5)
       this.addChild(this.indicatorText)
     }
@@ -70,16 +53,11 @@ export default class Loading extends Container {
     }, 100)
   }
 
-  /**
-   * set progress text
-   * @param {number} newValue
-   */
   set progress(newValue) {
     if (this.options.progress) {
       this.indicatorText.text = `${newValue}%`
     }
   }
-
   destroy() {
     clearInterval(this.timer)
     super.destroy(true)

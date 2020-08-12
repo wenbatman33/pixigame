@@ -1,0 +1,47 @@
+{"frames": {
+
+"hadoukan_air_ending_01.png":
+{
+	"frame": {"x":43,"y":1,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"hadoukan_air_ending_02.png":
+{
+	"frame": {"x":43,"y":19,"w":8,"h":22},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":22},
+	"sourceSize": {"w":8,"h":22}
+},
+"hadoukan_air_ending_03.png":
+{
+	"frame": {"x":25,"y":1,"w":16,"h":26},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":26},
+	"sourceSize": {"w":16,"h":26}
+},
+"hadoukan_air_ending_04.png":
+{
+	"frame": {"x":1,"y":1,"w":22,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+	"sourceSize": {"w":22,"h":28}
+}},
+"animations": {
+	"hadoukan_air_ending": ["hadoukan_air_ending_01.png","hadoukan_air_ending_02.png","hadoukan_air_ending_03.png","hadoukan_air_ending_04.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hadoukan_air_ending.png",
+	"format": "RGBA8888",
+	"size": {"w":66,"h":30},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d168992856f6cf070c702586789ebdfd:5af06e27334aeec22add54eaefd4052b:9edc29017c3fe275167239b735a562ad$"
+}
+}
